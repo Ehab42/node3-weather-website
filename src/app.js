@@ -26,21 +26,21 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'Ihab Bobbo el Gamed awy w ma7adesh 2ader 3aleeh y welad el a7ba y manayek'
+        name: 'Ihab El BoB'
     });
 });
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Page',
-        name: 'Ihab Bobbo el Gamed awy w ma7adesh 2ader 3aleeh y welad el a7ba y manayek'
+        name: 'Ihab El BoB'
     });
 });
 
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'This is the help page',
-        name: 'Ihab Bobbo el Gamed awy w ma7adesh 2ader 3aleeh y welad el a7ba y manayek',
+        name: 'Ihab El BoB',
         message: 'Here is a help message'
     });
 });
@@ -86,7 +86,7 @@ app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
         errorMessage: 'Help article not found',
-        name: 'Ihab Bobbo el Gamed awy w ma7adesh 2ader 3aleeh y welad el a7ba y manayek'
+        name: 'Ihab El BoB'
         
     });
 });
@@ -96,7 +96,7 @@ app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
         errorMessage: '404 page not found',
-        name: 'Ihab Bobbo el Gamed awy w ma7adesh 2ader 3aleeh y welad el a7ba y manayek'
+        name: 'Ihab El BoB'
     })
 });
 
