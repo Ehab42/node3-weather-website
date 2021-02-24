@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
             if(body.current.temperature < 0) {
                 console.log(chalk.red.bold('Elbes el jacket y kosomak la testahwa'));
             }
-            callback(undefined, `It is currently ${body.current.temperature} degress, feels like ${body.current.feelslike}`);
+            callback(undefined, `Temperature: ${body.current.temperature}, Feelslike: ${body.current.feelslike}, Humidity: ${body.current.humidity}`);
         }   
     }); 
 };
